@@ -1,13 +1,13 @@
 :root {
-  --color-bg: #f5f8f7;
-  --color-surface: #ffffff;
-  --color-primary: #2BA673;
-  --color-secondary: #0F3927;
-  --color-button: #34CB8C;
-  --color-accent: #3448CB;
-  --color-text: #0f3927;
-  --color-muted: #5b6b67;
-  --color-border: #d7e1dc;
+  --color-bg: #FBFAFF; /* very pale lavender */
+  --color-surface: #FFFFFF;
+  --color-primary: #A8DADC; /* pastel teal */
+  --color-secondary: #4A5568; /* muted slate for contrast */
+  --color-button: #FFD6A5; /* pastel peach */
+  --color-accent: #CDB4DB; /* pastel lavender accent */
+  --color-text: #2D3748; /* dark slate for readable text */
+  --color-muted: #667085;
+  --color-border: #E6E6F0;
 }
 
 * {
@@ -102,6 +102,35 @@ a {
 .section-dark {
   background: var(--color-secondary);
   color: #f5f8f5;
+}
+
+/* Sección específica para proyectos: fondo más oscuro para resaltar texto claro */
+.project-grid-section {
+  background: #0b1220; /* color muy oscuro, casi negro */
+  color: #ffffff;
+}
+
+/* Mantener las tarjetas de proyecto con fondo claro y texto legible */
+.project-grid-section .project-card {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+/* Oscurecer secciones específicas: blog, contacto y yamaha */
+.blog-grid-section,
+.contact-grid,
+.yamaha-details {
+  background: #0b1220; /* oscuro para resaltar texto blanco */
+  color: #ffffff;
+}
+
+/* Mantener las tarjetas internas con fondo claro para contraste */
+.blog-grid-section .blog-card,
+.contact-grid .contact-card,
+.contact-grid .info-block,
+.yamaha-details .detail-card {
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .section-accent {
